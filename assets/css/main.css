@@ -597,6 +597,15 @@ h6 {
 background-color: #00329C;
 }
 
+.bg-blue-white-gd {
+  background: linear-gradient(to bottom, 
+                /* Metade Superior: Gradiente Azul com Bordas Pretas */
+                #00329c 0%, #00329c 50%, 
+                /* Metade Inferior: Fundo Branco */
+                white 50%, white 100%);
+           
+}
+
 .footer {
   background-color: #fff;
   font-size: 14px;
@@ -978,6 +987,9 @@ section,
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 14px;
+  }
+  .img-home{
+    height: 50vh;
   }
 }
 
