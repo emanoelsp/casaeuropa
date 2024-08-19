@@ -459,15 +459,20 @@ h6 {
   }
 }
 
+
 /* Mobile Navigation */
 @media (max-width: 1199px) {
+  .sm-bg-white {
+    background-color: #fff;
+  }
+
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: black;
     font-size: 28px;
     line-height: 0;
-    margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+    background-color: white;
   }
 
   .navmenu {
@@ -476,11 +481,10 @@ h6 {
   }
 
   .navmenu ul {
-    display: none;
+    display: none; /* Esconde o menu por padrão */
     list-style: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
-    padding: 10px 0;
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
@@ -489,18 +493,17 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    flex-direction: column; /* Faz com que os itens fiquem em uma coluna */
   }
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    display: block; /* Mantém os links em display block */
     padding: 10px 20px;
+    color:black;
     font-family: var(--nav-font);
     font-size: 17px;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -517,25 +520,25 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color:  #00329C;
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: #fff;
-    color: var(--contrast-color);
+    background-color: #00329C;
+    color: black;
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: black;
   }
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background-color: #00329C;
+    color: black;
     transform: rotate(180deg);
   }
 
@@ -545,7 +548,7 @@ h6 {
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
+    background-color:  #00329C;
     transition: all 0.5s ease-in-out;
   }
 
@@ -563,7 +566,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: #000000;
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -581,7 +584,8 @@ h6 {
   }
 
   .mobile-nav-active .navmenu>ul {
-    display: block;
+    display: flex; /* Exibe o menu no modo coluna */
+    flex-direction: column; /* Garante que os itens fiquem um abaixo do outro */
   }
 }
 
