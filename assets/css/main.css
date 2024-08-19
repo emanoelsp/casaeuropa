@@ -504,7 +504,7 @@ h6 {
     z-index: 9998;
     flex-direction: column; /* Faz com que os itens fiquem em uma coluna */
     height: 280px;
-    padding-top; 2%;
+    padding-top: 2%;
   }
 
   .navmenu a,
