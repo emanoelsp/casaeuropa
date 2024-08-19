@@ -475,12 +475,12 @@ h6 {
 }
 
   .mobile-nav-toggle {
-    color: white;
+    color: black;
     font-size: 28px;
     line-height: 0;
     cursor: pointer;
     transition: color 0.3s;
-    background-color: #00329C;
+    background-color: white;
     height: auto;
     border-radius: 50%;
   }
