@@ -481,8 +481,7 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
     background-color: white;
-    height: auto;
-    border-radius: 50%;
+   border-radius: 50%;
   }
 
   .navmenu {
@@ -491,6 +490,7 @@ h6 {
   }
 
   .navmenu ul {
+    padding-top: 2%;
     display: none; /* Esconde o menu por padrão */
     list-style: none;
     position: absolute;
@@ -505,9 +505,9 @@ h6 {
     z-index: 9998;
     flex-direction: column; /* Faz com que os itens fiquem em uma coluna */
     height: 280px;
-    padding-top: 2%;
-     border: 0 white;
+    border: 0 white;
   }
+
 
   .navmenu a,
   .navmenu a:focus {
